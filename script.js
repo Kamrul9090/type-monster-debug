@@ -60,7 +60,6 @@ const validate = (key) => {
     return true;
   }
   errorCount += key.length;
-  return;
 };
 
 // FINISHED TYPING
