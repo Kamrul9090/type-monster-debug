@@ -150,9 +150,7 @@ button {
 #histories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
+  grid-gap: 20px;
 }
 
 .card {
