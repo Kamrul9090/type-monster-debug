@@ -35,7 +35,7 @@ const typeController = (e) => {
 
   // if it is not a valid character like Control/Alt then skip displaying anything
   if (!validLetters.includes(newLetter)) {
-    return errorCount += newLetter.length;
+    return;
   }
 
   userText += newLetter;
@@ -59,7 +59,8 @@ const validate = (key) => {
   if (key === questionText[userText.length - 1]) {
     return true;
   }
-  return false;
+  errorCount += key.length;
+  return;
 };
 
 // FINISHED TYPING
